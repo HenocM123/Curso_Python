@@ -41,9 +41,20 @@ print(current_date.year)
 print(current_date.month)
 print(current_date.day)
 
-current_date.year = date(current_date.year, current_date.month +1 , current_date.day)
+current_date = date(current_date.year, current_date.month + 1 , current_date.day)
 print(current_date.month)
+
+diff = year2024 - now
+print(diff)
+
+diff = year2024.date() - current_date
+print(diff)
+
+print(year2024.time())
 
 from datetime import timedelta
 
-time_delta = timedelta()
+start_timedelta = timedelta(200, 100, 100, weeks=10)
+end_timedelta = timedelta(300, 100, 100, weeks=10)
+print(end_timedelta - start_timedelta)
+print(end_timedelta + start_timedelta)
