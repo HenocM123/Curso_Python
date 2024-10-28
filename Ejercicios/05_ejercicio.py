@@ -1,9 +1,16 @@
 """
 /*
- * Crea una única función (importante que sólo sea una) que sea capaz
- * de calcular y retornar el área de un polígono.
- * - La función recibirá por parámetro sólo UN polígono a la vez.
- * - Los polígonos soportados serán Triángulo, Cuadrado y Rectángulo.
- * - Imprime el cálculo del área de un polígono de cada tipo.
+ * Crea un programa que invierta el orden de una cadena de texto
+ * sin usar funciones propias del lenguaje que lo hagan de forma automática.
+ * - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
  */
  """
+
+def reverse(text):
+    text_len = len(text)
+    reversed_text = ""
+    for index in range(0, len(text)):
+        reversed_text += text[text_len - index - 1]
+    return reversed_text
+
+print(reverse("hola mi amor"))
